@@ -1,4 +1,7 @@
 # debounce-utilities
+
+[![Build Status](https://travis-ci.org/sravan-s/debounce-utilities.svg?branch=master)](https://travis-ci.org/sravan-s/debounce-utilities)
+
  A set of js functions to manipulate impulsive actions
 
 ### Examples
