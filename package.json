@@ -1,0 +1,22 @@
+{
+  "name": "debounce-utilities",
+  "version": "0.0.0",
+  "description": "A set of js functions to manipulate impulsive actions Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sravan-s/debounce-utilities.git"
+  },
+  "keywords": [
+    "debounce"
+  ],
+  "author": "ess_ess <sravans2011@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sravan-s/debounce-utilities/issues"
+  },
+  "homepage": "https://github.com/sravan-s/debounce-utilities#readme"
+}
