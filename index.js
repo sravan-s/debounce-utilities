@@ -6,10 +6,10 @@ var debouncers = {};
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
-debouncers.debounce = function(fn, delay) {
+debouncers.debounce = function(fn, delay, context) {
+  context || (context = this);
   var timer = null;
   return function() {
-    var context = this;
     var args = arguments;
     clearTimeout(timer);
     timer = setTimeout(function() {
@@ -51,9 +51,8 @@ debouncers.reducedDebounce = function(bootstrapFn, reducerFn, endFunction, timeo
     if (firstTime) {
       bootstrapFn.apply(context, args);
       firstTime = false;
-    } else {
-      reducerFn.apply(context, args);
     }
+    reducerFn.apply(context, args);
     clearTimeout(timer);
     timer = setTimeout(function() {
       endFunction.apply(context, args);

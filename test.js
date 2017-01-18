@@ -49,7 +49,7 @@ describe('Reduced Debounce', function() {
       }, function() {
         val += 1;
       }, function() {
-        done(assert.equal(val, 4));
+        done(assert.equal(val, 5));
       }, 500);
 
       for(var  i = 0; i < 5; i++) {
